@@ -7,6 +7,6 @@ abstract class Vehicle {
         this.model = model;
         this.year = year;
     }
-    public abstract double calculateFuelEfficiency();
+    abstract double calculateFuelEfficiency();
 
 }

@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-
-public class Truck {
-    private ArrayList<Vehicle> = new ArrayList<Vehicle>();
+public class Truck extends Vehicle{
     private double milesDriven;
     private double fuelConsumed;
     private double cargoWeight;
@@ -11,7 +8,8 @@ public class Truck {
         this.fuelConsumed = fuelConsumed;
         this.cargoWeight = cargoWeight;
     }
-    public double calculateFuelEfficiency() {
+    @Override
+    double calculateFuelEfficiency() {
         return milesDriven / (fuelConsumed + (cargoWeight * 0.5));
     }
 }
